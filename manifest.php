@@ -55,3 +55,11 @@ $installdefs = array (
     ),
   ),
 );
+
+$installdefs['language'] = array (
+    array(
+        'from' => '<basepath>/Files/en_us.sudo_user_login.php',
+        'to_module' => 'Users',
+        'language' => 'en_us'
+    ),
+);
