@@ -32,7 +32,9 @@ class CustomUsersViewDetail extends UsersViewDetail {
 
         parent::preDisplay();
 
-        $viewHelper = UserViewHelper::create($this->ss, $this->bean, 'DetailView');
+	//used constructor instead of Static create method as it doesn't support SugarCE 6.5
+	//by Hatim Alam
+        $viewHelper = new UserViewHelper($this->ss, $this->bean, 'DetailView');
         $viewHelper->setupAdditionalFields();
 
         $errors = "";
