@@ -1,5 +1,5 @@
 # sugarcrm-sudo-login
-Easy login to another user account without password (Works well with both SugarCRM 6.X and 7.X)
+Easy login to another user account without password (Works well with both SugarCRM 6.5.X and 7.X)
 
 As a SugarCRM admin, it happens so many times that we need to access another user account to troubleshoot any issue or to setup a dashboard or any other changes.
 It's not always feasible to ask User for his/her password due to several reasons. In that case, the only option we are left with is to reset the user password and continue our work but all together it is a little painful process for admin as well as user.
