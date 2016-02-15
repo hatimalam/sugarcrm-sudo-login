@@ -89,9 +89,9 @@ class CustomUsersViewDetail extends UsersViewDetail {
 
 		//add sudo user button for login and logout
 		if($current_user->id != $this->bean->id) {
-			$buttons[] = "<input type='submit' onclick=\"this.form.module.value='Users';this.form.action.value='sudo_login_user'\" class='button' id='sudo_login_user' value='".translate('LBL_USER_LOGIN_AS','Users')."' {$this->bean->user_name}'/>";
+			$buttons[] = "<input type='submit' onclick=\"this.form.module.value='Users';this.form.action.value='sudo_login_user'\" class='button' id='sudo_login_user' value='".translate('LBL_USER_LOGIN_AS','Users')." {$this->bean->user_name}'/>";
 		} else if(($current_user->id == $this->bean->id) && (!empty($_SESSION['original_sudo_user_id']))) {
-			$buttons[] = "<input type='submit' onclick=\"this.form.module.value='Users';this.form.action.value='sudo_logout_user'\" class='button' id='sudo_logout_user' value='".translate('LBL_USER_LOGIN_BACK_AS','Users')."' {$_SESSION[original_sudo_user_name]}'/>";
+			$buttons[] = "<input type='submit' onclick=\"this.form.module.value='Users';this.form.action.value='sudo_logout_user'\" class='button' id='sudo_logout_user' value='".translate('LBL_USER_LOGIN_BACK_AS','Users')." {$_SESSION[original_sudo_user_name]}'/>";
 		}
         $buttons = array_merge($buttons, $this->ss->get_template_vars('BUTTONS_HEADER'));
 
