@@ -34,17 +34,16 @@ class CustomUsersController extends UsersController
 					$_SESSION['original_sudo_user_name'] = $GLOBALS['current_user']->user_name;
 				}
 
-				//
+				//initializing new user bean
 				$new_user_bean = BeanFactory::getBean('Users', $new_user_id);
-				//echo "<pre>";print_r($_SESSION);
 				$GLOBALS['current_user'] = $new_user_bean;
 				$_SESSION['authenticated_user_id'] = $new_user_bean->id;
 				$_SESSION['user_id'] = $new_user_bean->id;
-				//echo "<pre>";print_r($_SESSION);
 				$query_params = array(
 					'module' => 'Users',
 					'action' => 'DetailView',
 					'record' => $new_user_bean->id,
+					'updated_records' => translate('LBL_LOGIN_SUCCESS_AS_SUDO','Users').$new_user_bean->user_name,
 				);
 				SugarApplication::redirect('index.php?'.http_build_query($query_params));
 			}
@@ -75,6 +74,7 @@ class CustomUsersController extends UsersController
 					'module' => 'Users',
 					'action' => 'DetailView',
 					'record' => $original_user_bean->id,
+					'updated_records' => translate('LBL_LOGIN_BACK_SUCCESS_AS_SUDO','Users').$original_user_bean->user_name,
 				);
 				SugarApplication::redirect('index.php?'.http_build_query($query_params));
 			}
