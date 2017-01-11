@@ -5,6 +5,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * SugarCRM sudo login as another user
  * Written by: Hatim Alam
  * Dated: 11th Feb 2016
+ * Modified: 11th Jan 2017
  */
 
 require_once("modules/Users/controller.php");
