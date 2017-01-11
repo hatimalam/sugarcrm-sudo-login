@@ -18,5 +18,6 @@ To get away from this problem, I have written a little code snippet to login to 
 - To go back to your original admin user, navigate to your current user profile, click on action menu and click on 'Login Back as '
 
 It is easily unistallable via module loader.
+Now, it is compatible with on-demand instances as well.
 
 Note: It will override your custom controller.php and view.detail.php files in Users module if already exist. So, please make sure you do not have these 2 files in your custom folder and if you have, please backed it up before installing this package.
