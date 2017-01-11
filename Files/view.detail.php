@@ -6,6 +6,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  * We are overrding only preDisplay function as new button is added in this function
  * Written by: Hatim Alam
  * Dated: 11th Feb 2016
+ * Modified: 11th Jan 2017
  */
 
 require_once('modules/Users/views/view.detail.php');
