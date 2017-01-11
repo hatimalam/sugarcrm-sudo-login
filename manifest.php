@@ -32,9 +32,9 @@ $manifest = array (
   'icon' => '',
   'is_uninstallable' => true,
   'name' => 'SugarCRM Sudo Login',
-  'published_date' => '2016-02-14 10:25:00',
+  'published_date' => '2017-01-11 22:00:00',
   'type' => 'module',
-  'version' => 1.0,
+  'version' => 2.0,
   'remove_tables' => '',
 );
 
@@ -53,13 +53,10 @@ $installdefs = array (
       'from' => '<basepath>/Files/view.detail.php',
       'to' => 'custom/modules/Users/views/view.detail.php',
     ),
-  ),
-);
-
-$installdefs['language'] = array (
-    array(
-        'from' => '<basepath>/Files/en_us.sudo_user_login.php',
-        'to_module' => 'Users',
-        'language' => 'en_us'
+    2 => 
+    array (
+      'from' => '<basepath>/Files/en_us.sudo_user_login.php',
+      'to' => 'custom/Extension/modules/Users/Ext/Language/en_us.sudo_user_login.php',
     ),
+  ),
 );
