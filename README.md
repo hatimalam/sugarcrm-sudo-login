@@ -20,3 +20,6 @@ To get away from this problem, I have written a little code snippet to login to 
 It is easily unistallable via module loader and compatible with on-demand instances as well.
 
 Note: It will override your custom controller.php and view.detail.php files in Users module if already exist. So, please make sure you do not have these 2 files in your custom folder and if you have, please backed it up before installing this package.
+
+You can download the module loader installable package from here : https://app.box.com/s/7soncm3ksqnu0nck8rp631oxbahhe8ry
+Do let me know if you face any issue accessing the download URL.
